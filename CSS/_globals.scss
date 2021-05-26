@@ -10,6 +10,7 @@
     $primary-color-chiffon: #eed2cc;
     $primary-color-white: #fbf7f4;
     $primary-color-plum: #5c374c;
+    $primary-color-darkplum: #402d5f;
 
 html {
     font-family: 'Exo', sans-serif;
@@ -23,13 +24,12 @@ html {
     box-sizing: inherit;
 }
 
-//zeroing out viewport
 body {
     margin: 0;
     padding: 0;
     display: flex;
     flex-flow: row wrap;
-    gap: 1rem;
+    gap: 3rem 1.5rem;
     justify-content: center;
     align-items: flex-start;
     
@@ -39,6 +39,7 @@ body {
     background-size: contain;
     background-color: $primary-color-white;
 }
+
 
 //primary color setting
 // .primary-colors{

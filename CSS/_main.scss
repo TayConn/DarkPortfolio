@@ -1,3 +1,7 @@
+nav {
+    display: none;
+}
+
 section {
 
     h1{
@@ -82,7 +86,11 @@ section {
     border-top-left-radius: 0px;
     padding: 1rem 0;
     margin: 0;
-    color: $primary-color-plum;
+    color: $primary-color-darkplum;
+
+    ul{
+        color: $primary-color-grey;
+    }
 }
 
 .full-rounded-border{
@@ -95,51 +103,69 @@ section {
     }
 }
 
+.hero_image_components{
+    margin: 3rem .5rem 0 0 ;
+    min-width: 20vw;
+}
+
 .profile{
     display: flex;
     flex-flow: column wrap;
-    margin: 1rem;
+    margin: 3rem .5rem .5rem .5rem;
     padding: 0;
 }
 
 .about{
-    margin: 1rem;
-    width: 50vw;
+    margin: 3rem .5rem .5rem .5rem;
+    width: 40vw;
     height: 30vh;
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-end;
-
-    background-image: url(/images/speech-bubble.svg);
-    background-position: top center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-clip: border-box;
-    overflow: visible;
-    background-position: 50% 50%;
-   
-    
+    color: $primary-color-darkplum;
 }
+
+
+.speech{
+   position: relative;
+   background-color: $primary-color-chiffon;
+   padding: 20px;
+   border-radius: 10px;
+   max-width: 45vw;
+   min-height: 100%;
+}
+
+.speech::after {
+    position:absolute;
+    content: '';
+    border: 20px solid transparent;
+}
+
+.left.speech::after {
+    border-right-color: $primary-color-chiffon;
+    border-left: 0;
+    left: -20px;
+    top: 35%;
+    margin-top: -20px;
+}
+
+
 .about-text{
-    max-width: 80%;
+    // max-width: 80%;
     padding: 1.5rem;
     
+    p{
+        padding-top: 1rem;
+    }
 }
-.speechbubble-leg{
-    max-height: 10rem;
-   
 
-    // z-index: -2;
-
-}
 
 .abilities{
     display: flex;
     flex-flow: column nowrap;
     gap: 0;
     border-radius: 10px;
-    
-
+    min-height: 63vh;
     
     h2{
         padding: .5rem 1rem;
@@ -150,6 +176,8 @@ section {
     flex-flow: row nowrap;
     justify-content: space-between;
     padding: 1rem 1rem;
+    border-bottom: 3px solid $primary-color-grey;
+
     .screen-menu-icon{
         max-height: 1.25rem;
     }
@@ -164,6 +192,7 @@ section {
     border-bottom-right-radius: 0;
     border-top-right-radius: 0;
     border-top-left-radius: 0px;
+    border-right: 5px solid $primary-color-grey;
 }
 
 .skill-icon-container{
@@ -216,5 +245,118 @@ section {
         max-height: 12vh;
         max-width: 12vh;
         padding-bottom: 1.25rem;
+    }
+}
+
+//timeline
+
+.timeline {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 0;
+    border-radius: 10px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 2.5rem 0;
+    padding: 1rem;
+    
+}
+
+.timeline-wrapper{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 3rem;
+}
+.event-wrapper{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+    color: $primary-color-darkplum;
+
+    p, h3{
+        color: $primary-color-grey;
+    }
+}
+
+.timeline-item-wrapper{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 3rem;
+}
+
+.accentCircle{
+    width: 31px;
+    height: 31px;
+    background-color: white;
+    border: 2px solid $primary-color-green;
+    border-radius: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.accentLine{
+    width: 3px;
+    color: $primary-color-green;
+    height: 310px;
+    border: 3px solid $primary-color-green;
+    margin: 0;
+    // z-index: -1;
+    position: relative;
+    left: 4.18rem;
+}
+
+.projects-wrapper{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1rem;
+
+    min-width: 50vw;
+    padding: 1rem;
+
+    position: relative;
+
+    .cursor{
+        cursor: pointer;
+    }
+    .prev, .next{
+        cursor: pointer;
+        position: absolute;
+        top: 40%;
+        width: auto;
+        padding: 1rem;
+        margin-top: -50px;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+    }
+    .next{
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+    .prev:hover, .next:hover{
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .caption-container{
+        text-align: center;
+        background-color: $
+    }
+}
+
+.slide{
+    display: none;
+    img{
+        width: 100%
     }
 }

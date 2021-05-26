@@ -3,7 +3,7 @@ html {
   font-size: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background-color: white;
+  background-color: #fbf7f4;
 }
 
 *, *::before, *::after {
@@ -22,36 +22,17 @@ body {
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
   gap: 1rem;
-  background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='70' height='8' patternTransform='scale(3) rotate(35)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(0, 0%, 100%, 0)'/><path d='M-.02 22c8.373 0 11.938-4.695 16.32-9.662C20.785 7.258 25.728 2 35 2c9.272 0 14.215 5.258 18.7 10.338C58.082 17.305 61.647 22 70.02 22M-.02 14.002C8.353 14 11.918 9.306 16.3 4.339 20.785-.742 25.728-6 35-6 44.272-6 49.215-.742 53.7 4.339c4.382 4.967 7.947 9.661 16.32 9.664M70 6.004c-8.373-.001-11.918-4.698-16.3-9.665C49.215-8.742 44.272-14 35-14c-9.272 0-14.215 5.258-18.7 10.339C11.918 1.306 8.353 6-.02 6.002'  stroke-width='0.5' stroke='hsla(0, 0%, 100%, .25)' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(-39,-9)' fill='url(%23a)'/></svg>");
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='70' height='8' patternTransform='scale(3) rotate(35)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(0, 0%, 100%, 0)'/><path d='M-.02 22c8.373 0 11.938-4.695 16.32-9.662C20.785 7.258 25.728 2 35 2c9.272 0 14.215 5.258 18.7 10.338C58.082 17.305 61.647 22 70.02 22M-.02 14.002C8.353 14 11.918 9.306 16.3 4.339 20.785-.742 25.728-6 35-6 44.272-6 49.215-.742 53.7 4.339c4.382 4.967 7.947 9.661 16.32 9.664M70 6.004c-8.373-.001-11.918-4.698-16.3-9.665C49.215-8.742 44.272-14 35-14c-9.272 0-14.215 5.258-18.7 10.339C11.918 1.306 8.353 6-.02 6.002'  stroke-width='0.5' stroke='hsla(160, 19%, 51%, .05)' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(-39,-9)' fill='url(%23a)'/></svg>");
   background-repeat: repeat;
   background-position: top center;
   background-size: contain;
-  background-color: #ffcdb2;
-}
-
-.primary-colors h4 {
-  color: #6d6875;
-}
-
-.primary-colors h2 {
-  color: #e5989a;
-}
-
-.primary-colors h3 {
-  color: #b5838d;
-}
-
-.primary-colors h1 {
-  color: #ffb5a2;
-}
-
-.primary-colors p {
-  color: #6d6875;
-}
-
-.primary-background-color-mauve {
-  background-color: #b5838d;
-  color: white;
+  background-color: #fbf7f4;
 }
 
 .primary-background-color-grey {
@@ -63,19 +44,28 @@ body {
   background-color: #e5989a;
 }
 
-.primary-background-color-orange-cream {
-  background-color: #ffb5a2;
-  color: #6d6875;
+.primary-background-color-white {
+  background-color: #fbf7f4;
 }
 
-.primary-background-color-orange-light {
-  background-color: #ffcdb2;
-  color: #6d6875;
+.primary-background-color-chiffon {
+  background-color: #eed2cc;
+  color: #5c374c;
 }
 
-.svg-icon {
-  max-height: 10vh;
-  max-width: 10vh;
+.primary-background-color-plum {
+  background-color: #5c374c;
+  color: white;
+}
+
+.primary-background-color-green {
+  background-color: #6c9a8b;
+  color: #fbf7f4;
+}
+
+.primary-background-color-taffy {
+  background-color: #e8998d;
+  color: #5c374c;
 }
 
 section h1 {
@@ -111,8 +101,8 @@ section h4 {
 }
 
 section P {
-  font-size: 1rem;
-  line-height: 1.5rem;
+  font-size: 1.15rem;
+  line-height: 1.55rem;
   margin: 0;
   padding: 0 1rem;
   letter-spacing: 1.15px;
@@ -132,17 +122,23 @@ section li {
   list-style: none;
 }
 
+section li a {
+  text-decoration: none;
+  color: #6d6875;
+  cursor: pointer;
+}
+
 .section-title {
   border-bottom-right-radius: 0px;
   border-bottom-left-radius: 0px;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
-  padding: 0 1rem;
+  padding: .25rem 1rem;
   margin: 0;
 }
 
-.mauve-border {
-  border-color: #b5838d;
+.green-border {
+  border-color: #6c9a8b;
   border-width: 2px;
   border-style: solid;
 }
@@ -160,7 +156,17 @@ section li {
   border-top-left-radius: 0px;
   padding: 1rem 0;
   margin: 0;
-  color: #6d6875;
+  color: #5c374c;
+}
+
+.full-rounded-border {
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin: 0;
+}
+
+.full-rounded-border p {
+  padding: .5rem;
 }
 
 .profile {
@@ -177,7 +183,169 @@ section li {
 
 .about {
   margin: 1rem;
-  padding: 0;
-  max-width: 50%;
+  width: 50vw;
+  height: 30vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  background-image: url(/images/speech-bubble.svg);
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-clip: border-box;
+  overflow: visible;
+  background-position: 50% 50%;
+}
+
+.about-text {
+  max-width: 80%;
+  padding: 1.5rem;
+}
+
+.speechbubble-leg {
+  max-height: 10rem;
+}
+
+.abilities {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  gap: 0;
+  border-radius: 10px;
+}
+
+.abilities h2 {
+  padding: .5rem 1rem;
+}
+
+.abilities-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1rem 1rem;
+}
+
+.abilities-title .screen-menu-icon {
+  max-height: 1.25rem;
+}
+
+.abilities-subtitle-icon {
+  padding-right: .5rem;
+}
+
+.abilities-side-wrapper {
+  padding: 1.5rem 1rem;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0px;
+}
+
+.skill-icon-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  gap: 1rem;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0;
+  text-align: center;
+  padding: 2rem;
+}
+
+.skill-icon {
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0 .5rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.abilities-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  max-height: 45vh;
+}
+
+.skills-small {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.skills-small svg {
+  max-height: 7vh;
+  max-width: 7vh;
+  padding-bottom: 1rem;
+}
+
+.skills-large {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.skills-large svg {
+  max-height: 12vh;
+  max-width: 12vh;
+  padding-bottom: 1.25rem;
 }
 /*# sourceMappingURL=style.css.map */

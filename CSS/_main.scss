@@ -105,24 +105,30 @@ section {
 
 .hero_image_components{
     margin: 3rem .5rem 0 0 ;
-    min-width: 20vw;
+    min-width: 25vw;
 }
 
 .profile{
     display: flex;
     flex-flow: column wrap;
-    margin: 3rem .5rem .5rem .5rem;
+    margin: 2rem .5rem .5rem .5rem;
     padding: 0;
+
+    a:hover{
+        color: $primary-color-green;
+    }
 }
 
 .about{
     margin: 3rem .5rem .5rem .5rem;
     width: 40vw;
-    height: 30vh;
+    height: 23rem;
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-end;
     color: $primary-color-darkplum;
+
+    
 }
 
 
@@ -157,6 +163,14 @@ section {
     p{
         padding-top: 1rem;
     }
+    fa-quote-left{
+        font-size: 3rem;
+        padding-right: .5rem;
+    }
+    fa-quote-right{
+        font-size: 3rem;
+        padding-left: .5rem;
+    }
 }
 
 
@@ -165,7 +179,7 @@ section {
     flex-flow: column nowrap;
     gap: 0;
     border-radius: 10px;
-    min-height: 63vh;
+    height: 35rem;
     
     h2{
         padding: .5rem 1rem;
@@ -258,7 +272,8 @@ section {
     justify-content: flex-start;
     align-items: flex-start;
     margin: 2.5rem 0;
-    padding: 1rem;
+    padding: 2rem 1rem 3rem 1rem;
+    width: 27vw;
     
 }
 
@@ -291,8 +306,8 @@ section {
 }
 
 .accentCircle{
-    width: 31px;
-    height: 31px;
+    min-width: 31px;
+    min-height: 31px;
     background-color: white;
     border: 2px solid $primary-color-green;
     border-radius: 100%;
@@ -303,26 +318,39 @@ section {
 .accentLine{
     width: 3px;
     color: $primary-color-green;
-    height: 310px;
+    min-height: 500px;
     border: 3px solid $primary-color-green;
     margin: 0;
     // z-index: -1;
     position: relative;
     left: 4.18rem;
 }
+.projects-gallery{
+    width: 60vw;
+    border-radius: 10px;
+}
 
+.projects-gallery-title{
+    h2{
+        padding: 1.5rem;
+    }
+    border-bottom: 3px solid $primary-color-grey;
+}
 .projects-wrapper{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 1rem;
-
-    min-width: 50vw;
-    padding: 1rem;
-
     position: relative;
-
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
+}
+    .slide{
+        display: none;
+        
+        img{
+            max-height: 50rem;
+        }
+    }
     .cursor{
         cursor: pointer;
     }
@@ -331,13 +359,14 @@ section {
         position: absolute;
         top: 40%;
         width: auto;
-        padding: 1rem;
+        padding: 16px;
         margin-top: -50px;
-        color: white;
+        color: $primary-color-green;
         font-size: 20px;
         font-weight: bold;
         border-radius: 0 3px 3px 0;
         user-select: none;
+        background-color: rgba(0, 0, 0, 0.1);
     }
     .next{
         right: 0;
@@ -348,15 +377,45 @@ section {
         background-color: rgba(0, 0, 0, 0.8);
     }
 
+    .numbertext {
+        color: $primary-color-darkplum;
+        font-size: 1rem;
+        padding: 1rem;
+        position: absolute;
+        top: 0;
+      }
+
     .caption-container{
         text-align: center;
-        background-color: $
+        background-color: $primary-color-darkplum;
+        padding: 1rem;
+        color: white;
     }
-}
 
-.slide{
-    display: none;
-    img{
-        width: 100%
+    .row{
+        display: flex;
+        flex-flow: row wrap;
+        gap: 5px;
+        justify-content: flex-start;
+        align-items: center;
     }
-}
+
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    .column {
+        img{
+            max-height: 10vh;
+        }
+      }
+    .demo {
+        opacity: .6;
+    }
+    .active, .demo:hover {
+        opacity: 1;
+    }
+
+
+

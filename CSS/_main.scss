@@ -1,62 +1,31 @@
 nav {
-    display: none;
+    display: block;
+    color: white;
+    
+    ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: $primary-color-green;
+        text-transform: uppercase;
+
+        display: flex;
+        flex-flow: row nowrap;
+        gap: 3rem;
+        padding: .5rem;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
-section {
 
-    h1{
-        font-size: 2.75rem;
-        line-height: 3.5rem;
-        margin: 0;
-        padding: 0 1rem;
-        letter-spacing: 1.15px;
-    }
-    h2{
-        font-size: 2rem;
-        line-height: 2rem;
-        margin: 0;
-        padding: 0 1rem;
-    }
-    h3{
-        font-size: 1.5rem;
-        line-height: 2rem;
-        font-style: italic;
-        font-weight: 300;
-        margin: 0;
-        padding: 0 1rem;
-    }
-    h4{
-        font-size: 1.75rem;
-        line-height: 3rem;
-        margin: 0;
-        padding: 0;
-        font-weight: 300;
-    }
-    P{
-        font-size: 1.15rem;
-        line-height: 1.55rem;
-        margin: 0;
-        padding: 0 1rem;
-        letter-spacing: 1.15px;
-    }
-    ul{
-        padding: 0 1rem;
-        margin: .5rem 0;
-    }
-    li{
-        font-size: 1rem;
-        line-height: 1.75rem;
-        letter-spacing: 1.15px;
-        margin: 0;
-        padding: 0;
-        list-style: none;
-
-        a{
-            text-decoration: none;
-            color: $primary-color-grey;
-            cursor: pointer;
-        }
-    }
+.intro{
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 1rem;
+    justify-content: space-around;
+    align-items: flex-start;
 }
 
 .section-title{
@@ -105,13 +74,13 @@ section {
 
 .hero_image_components{
     margin: 3rem .5rem 0 0 ;
-    min-width: 25vw;
+    width: 25vw;
 }
 
 .profile{
     display: flex;
     flex-flow: column wrap;
-    margin: 2rem .5rem .5rem .5rem;
+    margin: 3rem .5rem .5rem .5rem;
     padding: 0;
 
     a:hover{
@@ -127,14 +96,12 @@ section {
     flex-flow: row nowrap;
     justify-content: flex-end;
     color: $primary-color-darkplum;
-
-    
 }
 
 
 .speech{
    position: relative;
-   background-color: $primary-color-chiffon;
+   background-color: $primary-color-taffy;
    padding: 20px;
    border-radius: 10px;
    max-width: 45vw;
@@ -148,7 +115,7 @@ section {
 }
 
 .left.speech::after {
-    border-right-color: $primary-color-chiffon;
+    border-right-color: $primary-color-taffy;
     border-left: 0;
     left: -20px;
     top: 35%;
@@ -173,7 +140,12 @@ section {
     }
 }
 
-
+.abilities-wrapper{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: flex-start;
+}
 .abilities{
     display: flex;
     flex-flow: column nowrap;
@@ -189,6 +161,7 @@ section {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
+    align-items: center;
     padding: 1rem 1rem;
     border-bottom: 3px solid $primary-color-grey;
 
@@ -219,6 +192,8 @@ section {
     border-top-left-radius: 0;
     text-align: center; 
     padding: 2rem;
+    height: 100%;
+    justify-content: center;
 }
 
 .skill-icon{
@@ -233,8 +208,7 @@ section {
 .abilities-wrapper{
     display: flex;
     flex-flow: row wrap;
-    max-height: 45vh;
-    // min-width: 60vw;
+    
 }
 
 .skills-small{
@@ -242,10 +216,9 @@ section {
     flex-flow: row nowrap;
     justify-content: space-evenly;
     align-items: center;
-    svg{
-        max-height: 7vh;
-        max-width: 7vh;
-        padding-bottom: 1rem;
+    i{
+        font-size: 5rem;
+        padding-bottom: 1.25rem;
     }
    
 }
@@ -255,9 +228,8 @@ section {
     flex-flow: row nowrap;
     justify-content: space-evenly;
     align-items: center;
-    svg{
-        max-height: 12vh;
-        max-width: 12vh;
+    i{
+        font-size: 7rem;
         padding-bottom: 1.25rem;
     }
 }
@@ -273,7 +245,7 @@ section {
     align-items: flex-start;
     margin: 2.5rem 0;
     padding: 2rem 1rem 3rem 1rem;
-    width: 27vw;
+    max-width: 27vw;
     
 }
 
@@ -290,7 +262,7 @@ section {
     justify-content: center;
     align-items: flex-start;
     gap: 2rem;
-    color: $primary-color-darkplum;
+    color: $primary-color-plum;
 
     p, h3{
         color: $primary-color-grey;
@@ -325,8 +297,18 @@ section {
     position: relative;
     left: 4.18rem;
 }
+
+.gallery-timeline-wrapper{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2rem 0;
+    margin: 3rem;
+}
+
 .projects-gallery{
-    width: 60vw;
+    width: 35vw;
     border-radius: 10px;
 }
 
@@ -348,7 +330,7 @@ section {
         display: none;
         
         img{
-            max-height: 50rem;
+            max-height: 35rem;
         }
     }
     .cursor{
@@ -387,8 +369,10 @@ section {
 
     .caption-container{
         text-align: center;
-        background-color: $primary-color-darkplum;
+        background-color: $primary-color-grey;
+        width: 100%;
         padding: 1rem;
+        margin-bottom: .5rem;
         color: white;
     }
 
@@ -417,5 +401,13 @@ section {
         opacity: 1;
     }
 
+    .galleryLink{
+        text-decoration: none;
+        color: white;
+        padding: 0 .5rem;
+    }
+    .galleryLink:hover{
+        color: $primary-color-blush;
+    }
 
 

@@ -27,17 +27,75 @@ html {
 body {
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-flow: row wrap;
-    gap: 2rem 1.5rem;
-    justify-content: center;
-    align-items: center;
     
-    background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='70' height='8' patternTransform='scale(3) rotate(35)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(0, 0%, 100%, 0)'/><path d='M-.02 22c8.373 0 11.938-4.695 16.32-9.662C20.785 7.258 25.728 2 35 2c9.272 0 14.215 5.258 18.7 10.338C58.082 17.305 61.647 22 70.02 22M-.02 14.002C8.353 14 11.918 9.306 16.3 4.339 20.785-.742 25.728-6 35-6 44.272-6 49.215-.742 53.7 4.339c4.382 4.967 7.947 9.661 16.32 9.664M70 6.004c-8.373-.001-11.918-4.698-16.3-9.665C49.215-8.742 44.272-14 35-14c-9.272 0-14.215 5.258-18.7 10.339C11.918 1.306 8.353 6-.02 6.002'  stroke-width='0.5' stroke='hsla(160, 19%, 51%, .05)' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(-39,-9)' fill='url(%23a)'/></svg>");
+    background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='70' height='8' patternTransform='scale(3) rotate(35)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(0, 0%, 100%, 0)'/><path d='M-.02 22c8.373 0 11.938-4.695 16.32-9.662C20.785 7.258 25.728 2 35 2c9.272 0 14.215 5.258 18.7 10.338C58.082 17.305 61.647 22 70.02 22M-.02 14.002C8.353 14 11.918 9.306 16.3 4.339 20.785-.742 25.728-6 35-6 44.272-6 49.215-.742 53.7 4.339c4.382 4.967 7.947 9.661 16.32 9.664M70 6.004c-8.373-.001-11.918-4.698-16.3-9.665C49.215-8.742 44.272-14 35-14c-9.272 0-14.215 5.258-18.7 10.339C11.918 1.306 8.353 6-.02 6.002'  stroke-width='0.5' stroke='hsla(160, 19%, 51%, .15)' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(-39,-9)' fill='url(%23a)'/></svg>");
     background-repeat: repeat;
     background-position: top center;
     background-size: contain;
-    background-color: $primary-color-white;
+    background-color: $primary-color-chiffon;
+
+    
+    h1{
+        font-size: 2.75rem;
+        line-height: 3.5rem;
+        margin: 0;
+        padding: 0 1rem;
+        letter-spacing: 1.15px;
+    }
+    h2{
+        font-size: 2rem;
+        line-height: 2rem;
+        margin: 0;
+        padding: 0 1rem;
+    }
+    h3{
+        font-size: 1.5rem;
+        line-height: 2rem;
+        font-style: italic;
+        font-weight: 300;
+        margin: 0;
+        padding: 0 1rem;
+    }
+    h4{
+        font-size: 1.75rem;
+        line-height: 3rem;
+        margin: 0;
+        padding: 0;
+        font-weight: 300;
+    }
+    P{
+        font-size: 1.15rem;
+        line-height: 1.55rem;
+        margin: 0;
+        padding: 0 1rem;
+        letter-spacing: 1.15px;
+    }
+    ul{
+        padding: 0 1rem;
+        margin: .5rem 0;
+    }
+    li{
+        font-size: 1rem;
+        line-height: 1.75rem;
+        letter-spacing: 1.15px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        a{
+            text-decoration: none;
+            color: $primary-color-grey;
+            cursor: pointer;
+        }
+    }
+}
+
+main{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 2rem 1.5rem;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 

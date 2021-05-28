@@ -31,7 +31,12 @@ function showSlides(n) {
   let liveLink = dots[slideIndex-1].dataset.live;
 
   dots[slideIndex-1].className += " active";
-  captionText.innerHTML = `${dots[slideIndex-1].alt} <br/>
-  <a class="galleryLink" title="click here to view this project on github" href="${githubLink}"><i class="fab fa-github"></i> View Github</a> | <a class="galleryLink" title="click here to view this project live" href="${liveLink}"><i class="fas fa-external-link-alt"></i> View live site</a>`;
+  
+ if (githubLink == 0) {
+  captionText.innerHTML = `${dots[slideIndex-1].alt}`;
+ } else {
+   captionText.innerHTML = `${dots[slideIndex-1].alt} <br/>
+   <a class="galleryLink" title="click here to view this project on github" href="${githubLink}"><i class="fab fa-github"></i> View Github</a> | <a class="galleryLink" title="click here to view this project live" href="${liveLink}"><i class="fas fa-external-link-alt"></i> View live site</a>`;
+ }
   
 } 

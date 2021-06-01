@@ -142,8 +142,8 @@ nav {
 nav .hamburger {
   background-color: transparent;
   border: 0;
-  color: #6d6875;
-  font-size: 1.25rem;
+  color: #6c9a8b;
+  font-size: 1.75rem;
   cursor: pointer;
   display: none;
 }
@@ -172,11 +172,20 @@ nav .nav-ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: white;
 }
 
 nav li {
   border-bottom: 6px solid #6c9a8b;
   font-size: 1.5rem;
+}
+
+nav li a {
+  color: white;
+}
+
+nav li a:hover {
+  color: #e8998d;
 }
 
 nav li:hover {
@@ -662,12 +671,31 @@ footer a:hover {
 }
 
 .projects-gallery {
-  width: 45vw;
+  width: auto;
   border-radius: 10px;
 }
 
 .projects-gallery-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: .5rem;
+  padding: 0rem .75rem;
   border-bottom: 3px solid #fbf7f4;
+}
+
+.projects-gallery-title .screen-menu-icon {
+  max-height: .75rem;
 }
 
 .projects-gallery-title h2 {
@@ -696,10 +724,12 @@ footer a:hover {
 .slide {
   display: none;
   background-color: #e8998d;
+  width: 100%;
+  height: auto;
 }
 
 .slide img {
-  max-height: 35rem;
+  max-height: auto;
 }
 
 .cursor {
@@ -766,9 +796,9 @@ footer a:hover {
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap;
   gap: 5px;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -832,6 +862,7 @@ footer a:hover {
     color: white;
   }
   nav .nav-ul a:hover {
+    color: #e8998d;
     cursor: pointer;
   }
   nav .show {

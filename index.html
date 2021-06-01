@@ -15,13 +15,14 @@
     <title>Taylor Conn | Portfolio</title>
 </head>
 <body>
-    <header>
+    <header id="top">
         <nav role="navigation">
-            <ul>
-                <li>About</li>
-                <li>Abilities</li>
-                <li>Work</li>
-                <li>Experience</li>
+            <button aria-label="menu" class="hamburger" id="hamburger"><i id="icon" class="fas fa-bars"></i></button>
+            <ul id="nav-ul" class="nav-ul">
+                <li><a href="#about">About</a></li>
+                <li><a href="#abilities">Abilities</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#exp">Experience</a></li>
             </ul>
         </nav>
     </header>
@@ -30,13 +31,13 @@
             <div class="hero_image_components">
                 <img src="/Images/Cartoon_Character_components.svg" alt="">
             </div>
-            <div class="about" aria-label="About-Me">
-                <div class="about-text speech left">
-                    <p><i class="fas fa-quote-left"></i> Hi there, I'm Taylor. I have 2+ years of experience in web development and am searching for a role where I can continue my journey as a budding developer.
+            <div class="about" id="about" aria-label="About-Me">
+                <div class="speech leg">
+                    <p><i class="fas fa-quote-left"></i> <strong>Hey there, I'm Taylor.</strong> I have 2+ years of experience in web development and am searching for a role where I can continue my journey as a budding developer.
                     </p>
-                    <p>Most of my professional experience has focused on designing and shipping marketing assets for a variety of devices and mediums - from responsive web design to email marketing, digital ads and print design.
+                    <p>I have over 4+ years of experience in designing and delivering marketing strategy and assets for a variety of devices and mediums - from responsive web design to email marketing, SEO, copywritting, digital ads and print design.
                     </p>
-                     <p>I love finding reasons that explain why people make decisions and what drives their user experience in products I help create. <i class="fas fa-quote-right"></i>
+                     <p>I love digging into data that explains why people make decisions and what drives their user experience in products I help create. <i class="fas fa-quote-right"></i>
                     </p>
                 </div>
             </div>
@@ -57,99 +58,130 @@
                 </div>
             </div>
         </section>
-        <section class="abilities-wrapper">
-            <div class="abilities primary-background-color-green" aria-label="Abilities-Skills">
-                <div class="abilities-title">
-                    <h2><i class="fas fa-chevron-right abilities-subtitle-icon"></i>Abilities & Tools</h2>
-                    <img class="screen-menu-icon" src="/images/menu_minimal_icon.svg" alt="">
+        <section class="skills-experience-wrapper" id="abilities">
+                <div class="abilities primary-background-color-green" aria-label="Abilities-Skills">
+                    <div class="abilities-title">
+                        <h2><i class="fas fa-chevron-right abilities-subtitle-icon"></i>Abilities & Tools</h2>
+                        <img class="screen-menu-icon" src="/images/menu_minimal_icon.svg" alt="">
+                    </div>
+                    <div class="abilities-wrapper">
+                        <div class="abilities-side-wrapper primary-background-color-taffy">
+                            <h3>Development</h3>
+                            <ul>
+                                <li><i class="fas fa-caret-right abilities-subtitle-icon"></i>HTML, CSS & Sass</li>
+                                <li><i class="fas fa-caret-right abilities-subtitle-icon"></i>Javascript</li>
+                                <li><i class="fas fa-caret-right abilities-subtitle-icon"></i>WCAG 2.1 Accessability</li>
+                                <li><i class="fas fa-caret-right abilities-subtitle-icon"></i>Email Marketing Campaigns</li>
+                            </ul>
+                            <h3>Design</h3>
+                            <ul>
+                                <li><i class="fas fa-caret-right abilities-subtitle-icon"></i>Layout Design</li>
+                                <li><i class="fas fa-caret-right abilities-subtitle-icon"></i>UI + UX</li>
+                                <li><i class="fas fa-caret-right abilities-subtitle-icon"></i>Digital Design</li>
+                                <li><i class="fas fa-caret-right abilities-subtitle-icon"></i>Copywriting</li>
+                            </ul>
+                        </div>
+                        <div class="skill-icon-container primary-background-color-plum">
+                            <div class="skills-small">
+                                    <div class="skill-icon">
+                                        <p><i class="devicon-figma-plain"></i></p>
+                                        <p>Figma</p>
+                                    </div>
+                                    <div class="skill-icon">
+                                       <p> <i class="devicon-sketch-line colored"></i></p>
+                                        <p>Sketch</p>
+                                    </div>
+                                    <div class="skill-icon">
+                                        <p><i class="devicon-xd-plain colored"></i></p>
+                                        <p>Adobe<br/>XD</p>
+                                    </div>
+                                    <div class="skill-icon">
+                                        <p><i class="devicon-photoshop-plain colored"></i></p>
+                                        <p>Adobe<br/>Photoshop</p>
+                                    </div>
+                                    <div class="skill-icon">
+                                        <p><i class="devicon-illustrator-plain colored"></i></p>
+                                        <p>Adobe<br/>Illustrator</p>
+                                    </div>
+                                    <div class="skill-icon">
+                                        <p> <i class="devicon-gulp-plain colored"></i></p>
+                                        <p>Gulp</p>
+                                    </div>
+                                    <div class="skill-icon">
+                                        <p> <i class="devicon-npm-original-wordmark colored"></i></p>
+                                        <p>NPM</p>
+                                    </div>
+                            </div>
+                            <div class="skills-large">
+                                <div class="skill-icon">
+                                    <p><i class="devicon-html5-plain-wordmark colored"></i></p>
+                                    <p>HTML</p>
+                                    </div>
+                                    <div class="skill-icon">
+                                    <p><i class="devicon-css3-plain-wordmark colored"></i></p>
+                                    <p>CSS</p>
+                                    </div>
+            
+                            <div class="skill-icon">
+                                    <p><i class="devicon-sass-original colored"></i></p>
+                                    <p>Sass</p>
+                                </div>
+                                <div class="skill-icon">
+                                    <p><i class="devicon-javascript-plain colored"></i></p>
+                                    <p>Javascript</p>
+                                </div>
+                                <div class="skill-icon">
+                                    <p><i class="devicon-github-original"></i></p>
+                                    <p>Github</p>
+                                </div>
+            
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="abilities-wrapper">
-                    <div class="abilities-side-wrapper primary-background-color-taffy">
-                        <h3>Development</h3>
-                        <ul>
-                            <li><i class="fas fa-caret-right abilities-subtitle-icon"></i>HTML</li>
-                            <li><i class="fas fa-caret-right abilities-subtitle-icon"></i>CSS & Sass</li>
-                            <li><i class="fas fa-caret-right abilities-subtitle-icon"></i>Javascript</li>
-                            <li><i class="fas fa-caret-right abilities-subtitle-icon"></i>WCAG 2.1 Accessability</li>
-                            <li><i class="fas fa-caret-right abilities-subtitle-icon"></i>Web Development</li>
-                            <li><i class="fas fa-caret-right abilities-subtitle-icon"></i>Email Marketing Campaigns</li>
-                        </ul>
-                        <h3>Design</h3>
-                        <ul>
-                            <li><i class="fas fa-caret-right abilities-subtitle-icon"></i>Adobe Creative Suite</li>
-                            <li><i class="fas fa-caret-right abilities-subtitle-icon"></i>Layout Design</li>
-                            <li><i class="fas fa-caret-right abilities-subtitle-icon"></i>UI + UX</li>
-                            <li><i class="fas fa-caret-right abilities-subtitle-icon"></i>Digital Design</li>
-                            <li><i class="fas fa-caret-right abilities-subtitle-icon"></i>Copywriting</li>
-                            <li><i class="fas fa-caret-right abilities-subtitle-icon"></i>A+B Testing</li>
-                        </ul>
-                    </div>
-                    <div class="skill-icon-container primary-background-color-plum">
-                        <div class="skills-small">
-                            <div class="skill-icon">
-                                <p> <i class="devicon-gulp-plain colored"></i></p>
-                                <p>Gulp</p>
+            <div class="timeline green-border" id="exp" aria-label="Experience-timeline">
+                
+                <h2><i class="fas fa-chevron-right abilities-subtitle-icon"></i> Experience</h2>
+                <div class="timeline-wrapper">
+                    <div class="accentLine"></div>
+                    <div class="event-wrapper">
+                        <div class="timeline-item-wrapper">
+                            <div class="accentCircle"></div>
+                            <div>
+                                <h2>2013 - 2015</h2>
+                                <p>California State University, Chico</p>
+                                <h3>Bachelor of Science</h3>
+                                <p>Applied Computer Graphics</p>
                             </div>
-                            <div class="skill-icon">
-                                <p> <i class="devicon-npm-original-wordmark colored"></i></p>
-                                <p>NPM</p>
-                            </div>
-            
-                                <div class="skill-icon">
-                                    <p><i class="devicon-figma-plain"></i></p>
-                                    <p>Figma</p>
-                                </div>
-                                <div class="skill-icon">
-                                   <p> <i class="devicon-sketch-line colored"></i></p>
-                                    <p>Sketch</p>
-                                </div>
-                                <div class="skill-icon">
-                                    <p><i class="devicon-xd-plain colored"></i></p>
-                                    <p>Adobe<br/>XD</p>
-                                </div>
-                                <div class="skill-icon">
-                                    <p><i class="devicon-illustrator-plain colored"></i></p>
-                                    <p>Adobe<br/>Illustrator</p>
-                                </div>
-                                <div class="skill-icon">
-                                    <p><i class="devicon-photoshop-plain colored"></i></p>
-                                    <p>Adobe<br/>Photoshop</p>
-                                </div>
                         </div>
-                        <div class="skills-large">
-                            <div class="skill-icon">
-                                <p><i class="devicon-html5-plain-wordmark colored"></i></p>
-                                <p>HTML</p>
-                                </div>
-                                <div class="skill-icon">
-                                <p><i class="devicon-css3-plain-wordmark colored"></i></p>
-                                <p>CSS</p>
-                                </div>
-            
-                        <div class="skill-icon">
-                                <p><i class="devicon-sass-original colored"></i></p>
-                                <p>Sass</p>
+                        <div class="timeline-item-wrapper">
+                            <div class="accentCircle"></div>
+                            <div>
+                                <h2>2017 - Present</h2>
+                                <p>NorthBay Healthcare</p>
+                                <h3>Digital Media Specialist</h3>
+                                <p>Marketing & Business Development</p>
                             </div>
-                            <div class="skill-icon">
-                                <p><i class="devicon-javascript-plain colored"></i></p>
-                                <p>Javascript</p>
-                            </div>
-                            <div class="skill-icon">
-                                <p><i class="devicon-github-original"></i></p>
-                                <p>Github</p>
-                            </div>
-            
                         </div>
-                    </div>
+                        <div class="timeline-item-wrapper">
+                            <div class="accentCircle"></div>
+                            <div>
+                                <h2>2018 - 2021</h2>
+                                <p>Southern New Hampshire University</p>
+                                <h3>Master of Science</h3>
+                                <p>Information Technology - Web Development</p>
+                            </div>
+                        </div>
                 </div>
                 </div>
             </div>
         </section>
 
-        <section class="gallery-timeline-wrapper">
+        <section class="gallery-wrapper" id="work">
             <div class="projects-gallery primary-background-color-green" aria-label="Work-and-projects">
                 <div class="projects-gallery-title">
                     <h2><i class="fas fa-chevron-right abilities-subtitle-icon"></i> Projects & Work</h2>
+                    <img class="screen-menu-icon" src="/images/menu_minimal_icon.svg" alt="">
                 </div>
                 <div class="projects-wrapper primary-background-color-grey">
                     <div class="slide">
@@ -162,7 +194,7 @@
                     </div>
                     <div class="slide">
                         <div class="numbertext">3/8</div>
-                        <img src="/images/gallery/placeholder.jpg"  style="width:100%" alt="">
+                        <img src="/images/gallery/CoffeeSub_Responsive_multidevice.png"  style="width:100%" alt="Coffee subcription site | HTML, CSS/Sass & Javascript | Flexbox & Grid">
                     </div>
                     <div class="slide">
                         <div class="numbertext">4/8</div>
@@ -192,8 +224,8 @@
                       <div class="row">
                               <div class="column">
                               <img src="/images/gallery/TypeMaster_Responsive_multidevice.png" alt="Personal Project: Keyboard Launch Site <br/> <i>HTML, CSS/Sass | Flexbox</i>" class="demo cursor"  onclick="currentSlide(1)" data-github="https://github.com/TayConn/typemaster_productSite" data-live="https://typemaster-product-site-gdsslight.vercel.app/"></div>
-                              <div class="column"><img src="/images/gallery/FAQ-Responsive_multidevice.png" alt="Personal Project: Responsive FAQ menu <br/> <i>HTML, CSS/Sass & Javascript | Flexbox + SVG Positioning</i>" class="demo cursor" onclick="currentSlide(2)" data-github="https://github.com/TayConn/accordionFAQ" data-live="https://accordian-faq-eta.vercel.app/"></div>
-                              <div class="column"><img src="/images/gallery/placeholder.jpg" alt="A placeholder image 3" class="demo cursor" onclick="currentSlide(3)" data-github="https://github.com/TayConn/CoffeeSubscriptionSite" data-live="https://github.com/TayConn/CoffeeSubscriptionSite"></div>
+                              <div class="column"><img src="/images/gallery/FAQ-Responsive_multidevice.png" alt="Personal Project: Responsive FAQ menu <br/> <i>HTML, CSS/Sass & Javascript | Flexbox</i>" class="demo cursor" onclick="currentSlide(2)" data-github="https://github.com/TayConn/accordionFAQ" data-live="https://accordian-faq-eta.vercel.app/"></div>
+                              <div class="column"><img src="/images/gallery/CoffeeSub_Responsive_multidevice.png" alt="Coffee subcription site<br/><i>HTML, CSS/Sass & Javascript | Flexbox & Grid<i>" class="demo cursor" onclick="currentSlide(3)" data-github="https://github.com/TayConn/CoffeeSubscriptionSite" data-live=""></div>
                               <div class="column"><img src="/images/gallery/placeholder.jpg" alt="A placeholder image 4" class="demo cursor" onclick="currentSlide(4)" data-github="https://github.com/TayConn/CoffeeSubscriptionSite" data-live="https://github.com/TayConn/CoffeeSubscriptionSite"></div>
                               <div class="column"><img src="/images/gallery/placeholder.jpg" alt="A placeholder image 5" class="demo cursor" onclick="currentSlide(5)" data-github="https://github.com/TayConn/CoffeeSubscriptionSite" data-live="https://github.com/TayConn/CoffeeSubscriptionSite" data-github="https://github.com/TayConn/CoffeeSubscriptionSite" data-live="https://github.com/TayConn/CoffeeSubscriptionSite"></div>
                               <div class="column"><img src="/images/gallery/placeholder.jpg" alt="A placeholder image 6" class="demo cursor" onclick="currentSlide(6)" data-github="https://github.com/TayConn/CoffeeSubscriptionSite" data-live="https://github.com/TayConn/CoffeeSubscriptionSite"></div>
@@ -202,42 +234,12 @@
                       </div>
                 </div>
             </div>
-            <div class="timeline green-border" aria-label="Experience-timeline">
-                <h2><i class="fas fa-chevron-right abilities-subtitle-icon"></i> Experience</h2>
-                <div class="timeline-wrapper">
-                    <div class="accentLine"></div>
-                    <div class="event-wrapper">
-                        <div class="timeline-item-wrapper">
-                            <div class="accentCircle"></div>
-                            <div class="timeline-event">
-                                <h2>2013 - 2015</h2>
-                                <p>California State University, Chico</p>
-                                <h3>Bachelor of Science</h3>
-                                <p>Applied Computer Graphics</p>
-                            </div>
-                        </div>
-                        <div class="timeline-item-wrapper">
-                            <div class="accentCircle"></div>
-                            <div class="timeline-event">
-                                <h2>2017 - Present</h2>
-                                <p>NorthBay Healthcare</p>
-                                <h3>Digital Media Specialist</h3>
-                                <p>Marketing & Business Development</p>
-                            </div>
-                        </div>
-                        <div class="timeline-item-wrapper">
-                            <div class="accentCircle"></div>
-                            <div class="timeline-event">
-                                <h2>2018 - 2021</h2>
-                                <p>Southern New Hampshire University</p>
-                                <h3>Master of Science</h3>
-                                <p>Information Technology - Web Development</p>
-                            </div>
-                        </div>
-                </div>
-                </div>
-            </div>
         </section>
+        <div class="scrollUpWrapper">
+            <a href="#top" class="scrollUpLink" aria-label="Scroll-to-Top"><i class="fas fa-chevron-up"></i></a>
+        </div>
+        <footer><a href="https://github.com/TayConn">© Taylor Conn :)</a>
+        </footer>
     <script src="script.js"></script>
 </body>
 </html>

@@ -1,3 +1,21 @@
+
+//Mobile Menu JS
+const hamburger = document.getElementById('hamburger');
+const navUL = document.getElementById('nav-ul');
+const icon = document.getElementById('icon');
+
+hamburger.addEventListener('click', () => {
+    navUL.classList.toggle('show');
+    navUL.classList.toggle('slide-bottom');
+    icon.classList.toggle('fa-times-circle');
+    icon.classList.toggle('fa-bars');
+});
+
+//background animation
+const waves = document.getElementById('patternId');
+
+
+//portfolio Gallery
 let slideIndex = 1;
 
 showSlides(slideIndex);

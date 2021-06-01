@@ -19,6 +19,11 @@ html {
     background-color: $primary-color-white;
 }
 
+@media screen and (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
+  }
 
 *, *::before, *::after {
     box-sizing: inherit;
@@ -33,51 +38,47 @@ body {
     background-position: top center;
     background-size: contain;
     background-color: $primary-color-chiffon;
-
     
     h1{
-        font-size: 2.75rem;
-        line-height: 3.5rem;
+        font-size: 2.25rem;
+        line-height: 3rem;
         margin: 0;
-        padding: 0 1rem;
-        letter-spacing: 1.15px;
+        padding: 0;
+        // letter-spacing: 1.15px;
     }
     h2{
-        font-size: 2rem;
+        font-size: 1.75rem;
         line-height: 2rem;
         margin: 0;
-        padding: 0 1rem;
+        padding: 0;
     }
     h3{
         font-size: 1.5rem;
-        line-height: 2rem;
+        line-height: 1.75rem;
         font-style: italic;
         font-weight: 300;
         margin: 0;
-        padding: 0 1rem;
+        padding: 0;
     }
     h4{
-        font-size: 1.75rem;
+        font-size: 2.25rem;
         line-height: 3rem;
         margin: 0;
         padding: 0;
         font-weight: 300;
     }
     P{
-        font-size: 1.15rem;
-        line-height: 1.55rem;
-        margin: 0;
-        padding: 0 1rem;
-        letter-spacing: 1.15px;
-    }
-    ul{
-        padding: 0 1rem;
-        margin: .5rem 0;
-    }
-    li{
-        font-size: 1rem;
+        font-size: 1.25rem;
         line-height: 1.75rem;
-        letter-spacing: 1.15px;
+        margin: 0;
+        padding: 0;
+        // letter-spacing: 1.15px;
+    }
+
+    li{
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+        // letter-spacing: 1.15px;
         margin: 0;
         padding: 0;
         list-style: none;
@@ -100,28 +101,6 @@ main{
 
 
 //primary color setting
-// .primary-colors{
-//     h4{
-//         color: $primary-color-grey;
-//     }
-//     h2{
-//         color:$primary-color-blush;
-//     }
-//     h3{
-//         color: $primary-color-mauve;
-//     }
-//     h1{
-//         color: $primary-color-orange-cream;
-//     }
-//     p{
-//         color: $primary-color-grey;
-//     }
-// }
-
-// .primary-background-color-mauve{
-//     background-color: $primary-color-mauve;
-//     color: white;
-// }
 .primary-background-color-grey{
     background-color: $primary-color-grey;
     color: white;
@@ -129,14 +108,6 @@ main{
 .primary-background-color-blush{
     background-color: $primary-color-blush;
 }
-// .primary-background-color-orange-cream{
-//     background-color: $primary-color-orange-cream;
-//     color: $primary-color-grey;
-// }
-// .primary-background-color-orange-light{
-//     background-color: $primary-color-orange-light;
-//     color: $primary-color-grey;
-// }
 
 .primary-background-color-white{
     background-color: $primary-color-white;

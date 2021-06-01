@@ -185,7 +185,7 @@ nav li a {
 }
 
 nav li a:hover {
-  color: #e8998d;
+  color: white;
 }
 
 nav li:hover {
@@ -644,7 +644,7 @@ footer a:hover {
 .accentLine {
   width: 3px;
   color: #6c9a8b;
-  min-height: 18.75rem;
+  min-height: 21rem;
   border: 3px solid #6c9a8b;
   margin: 0;
   position: relative;

@@ -654,7 +654,7 @@ footer a:hover {
 .accentCircle {
   min-width: 31px;
   min-height: 31px;
-  background-color: white;
+  background-color: #6c9a8b;
   border: 2px solid #6c9a8b;
   border-radius: 100%;
   position: relative;
@@ -663,9 +663,9 @@ footer a:hover {
 
 .accentLine {
   width: 3px;
-  color: #6c9a8b;
+  color: #5c374c;
   min-height: 20rem;
-  border: 3px solid #6c9a8b;
+  border: 3px solid #5c374c;
   margin: 0;
   position: relative;
   left: 2rem;
@@ -981,12 +981,12 @@ footer a:hover {
         -ms-flex-flow: column wrap;
             flex-flow: column wrap;
     margin: 0rem;
-    min-width: 90vw;
+    min-width: 95vw;
     height: 100%;
   }
   .about {
     margin: 0;
-    width: 100vw;
+    width: 95vw;
     height: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1034,8 +1034,8 @@ footer a:hover {
             transform: scaleX(-1);
   }
   .abilities {
-    margin: 0 0 1rem;
-    width: 100vw;
+    margin: 0 1rem;
+    width: 95vw;
   }
   .abilities-wrapper {
     display: -webkit-box;
@@ -1078,7 +1078,8 @@ footer a:hover {
         -ms-flex-flow: column-reverse wrap;
             flex-flow: column-reverse wrap;
     max-width: 100vw;
-    border-radius: 0;
+    border-radius: 0 0 10px 10px;
+    gap: .75rem;
   }
   .skills-small {
     -webkit-box-orient: horizontal;
@@ -1086,14 +1087,15 @@ footer a:hover {
         -ms-flex-flow: row wrap;
             flex-flow: row wrap;
     max-width: 100vw;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .skills-small i {
-    font-size: 2rem;
+    font-size: 3rem;
   }
   .skills-small p {
     padding-bottom: 1rem;
@@ -1112,8 +1114,8 @@ footer a:hover {
             align-items: center;
   }
   .skills-large i {
-    font-size: 4rem;
-    padding-bottom: 1rem;
+    font-size: 3rem;
+    padding-bottom: 0;
   }
   .skills-large p {
     padding-bottom: 1rem;
@@ -1125,7 +1127,11 @@ footer a:hover {
     padding-left: .75rem;
   }
   .accentLine {
-    min-height: 32.25rem;
+    min-height: 30.25rem;
+  }
+  .event-wrapper {
+    gap: 2rem 1rem;
+    min-width: 75vw;
   }
   .gallery-wrapper {
     display: -webkit-box;
@@ -1138,16 +1144,16 @@ footer a:hover {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    gap: 1rem;
-    padding: 1rem 0;
-    margin: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: .5rem 0;
+    margin: 0 .5rem;
+    width: 95vw;
   }
   .projects-gallery {
     width: 100vw;
-    border-radius: 10px 10px 0 0;
+    border-radius: 10px;
   }
   .projects-gallery-title {
     display: -webkit-box;
@@ -1187,7 +1193,7 @@ footer a:hover {
     top: 15%;
   }
   .projects-wrapper {
-    border-radius: 0;
+    border-radius: 0 10px;
   }
 }
 

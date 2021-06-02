@@ -11,10 +11,6 @@ hamburger.addEventListener('click', () => {
     icon.classList.toggle('fa-bars');
 });
 
-//background animation
-const waves = document.getElementById('patternId');
-
-
 //portfolio Gallery
 let slideIndex = 1;
 

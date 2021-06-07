@@ -62,6 +62,10 @@ nav {
     right: 13rem;
 }
 
+.plant_hawthoria_about{
+    display: none;
+}
+
 .slowSwing{
     transform-origin: 50% 0;
     animation: moveIt 5s ease-in-out infinite;
@@ -128,10 +132,7 @@ padding: 0.25rem;
 }
 
 .section-title{
-    border-bottom-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
+    border-radius: 10px 10px 0 0;
     padding: 1rem 1rem;
     margin: 0;
 }
@@ -144,10 +145,7 @@ padding: 0.25rem;
 
 
 .section-details{
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-    border-top-right-radius: 0px;
-    border-top-left-radius: 0px;
+    border-radius: 0 0 10px 10px;
     padding: 1.5rem;
     margin: 0;
     color: $primary-color-darkplum;
@@ -241,7 +239,6 @@ padding: 0.25rem;
     gap: 0;
     border-radius: 10px;
     
-    
     h2{
         padding: .5rem 1rem;
     }
@@ -253,7 +250,7 @@ padding: 0.25rem;
     justify-content: space-around;
     align-items: flex-start;
     // height: 100%;
-    gap: 3rem;
+    gap: 1rem;
     margin: 2rem 5rem;
 }
 
@@ -455,7 +452,6 @@ padding: 0.25rem;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    // padding-top: 1rem;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
@@ -559,6 +555,9 @@ padding: 0.25rem;
     .plant_hawthoria{
         display: none;
     }
+    .plant_hawthoria_about{
+        display: none;
+    }
     
     nav{
             padding: 1rem 1rem 0;
@@ -644,7 +643,7 @@ padding: 0.25rem;
         margin: 2rem 1rem;
     }
 
-    //intro
+//intro
     
 .hero_image_components{
     margin: 0;
@@ -846,12 +845,178 @@ padding: 0.25rem;
 
 }
 
-@media screen and (max-width: 1024px){
-   intro{
+@media screen and (max-width: 799px){
+//intro
+.plant_pearls{
+    position: absolute;
+    left: .75rem;
+    max-height: 15rem;
+}
+   .intro{
     flex-flow: row wrap;
     gap: 1rem;
-    justify-content: space-around;
-    align-items: flex-start;
-    margin: 3rem;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.5rem;
    }
+
+.hero_image_components{
+    margin: 0;
+    min-width: 25vw;
+}
+
+.about{
+    margin: 0;
+    width: 64vw;
+    height: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    color: $primary-color-darkplum;
+
+    p{
+        padding: .5rem 0;
+        font-size: 1.15rem;
+        line-height: 1.25rem;
+    }
+    fa-quote-left{
+        font-size: 3rem;
+        padding-right: .5rem;
+    }
+    fa-quote-right{
+        font-size: 3rem;
+        padding-left: .5rem;
+    }
+}
+.speech{
+   position: relative;
+   background-color: $primary-color-taffy;
+   padding: 1.5rem 1rem;
+   border-radius: 10px;
+   max-width: 100vw;
+   min-height: 100%;
+}
+
+.leg.speech::after {
+    border-right-color: #e8998d;
+    border-left: 0px;
+    left: -30px;
+    top: 35%;
+    margin-top: -20px;
+    
+}
+.profile{
+    display: flex;
+    flex-flow: column wrap;
+    margin: 0rem;
+    width: 100%;
+}
+.plant_hawthoria_about{
+    display: block;
+    max-height: 8rem;
+    margin-top: 2rem;
+    margin-bottom: -2rem;
+
+}
+.plant_hawthoria{
+    display: none;
+}
+.section-details{
+    display:flex;
+    flex-flow: row nowrap;
+    gap: 1.75rem;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    width: 100%;
+
+    ul{
+        margin: 0;
+    }
+}
+
+.skills-experience-wrapper{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 1.5rem;
+    width: 25vw;
+}
+
+.abilities{
+    width: 100vw;
+    margin: 1.5rem;
+}
+.abilities-wrapper{
+    width: 100vw;
+}
+
+
+.skill-icon-container{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+    border-radius: 0 0 10px 0;
+    text-align: center; 
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+    border-left: 5px solid $primary-color-white;
+    width: 74vw;
+}
+
+.skill-icon{
+    padding: 1rem;
+    display: flex;
+    gap: 0 .5rem;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.skills-small{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    i{
+        font-size: 3rem;
+    }
+    p{
+        padding-bottom: 1.75rem;
+    }
+   
+}
+
+.skills-large{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    i{
+        font-size: 6rem;
+        padding-bottom: 1.75rem;
+    }
+    p{
+        padding-bottom: 1.75rem;
+    }
+}
+.gallery-wrapper{
+    margin: 1rem;
+}
+.projects-gallery{
+    width: 100vw;
+    border-radius: 10px;
+}
+.row{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 5px;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: .5rem 1rem 1rem 1rem;
+}
+
 }

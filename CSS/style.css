@@ -210,6 +210,10 @@ nav li:hover {
   right: 13rem;
 }
 
+.plant_hawthoria_about {
+  display: none;
+}
+
 .slowSwing {
   -webkit-transform-origin: 50% 0;
           transform-origin: 50% 0;
@@ -280,10 +284,7 @@ footer a:hover {
 }
 
 .section-title {
-  border-bottom-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
+  border-radius: 10px 10px 0 0;
   padding: 1rem 1rem;
   margin: 0;
 }
@@ -295,10 +296,7 @@ footer a:hover {
 }
 
 .section-details {
-  border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-  border-top-right-radius: 0px;
-  border-top-left-radius: 0px;
+  border-radius: 0 0 10px 10px;
   padding: 1.5rem;
   margin: 0;
   color: #402d5f;
@@ -426,7 +424,7 @@ footer a:hover {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  gap: 3rem;
+  gap: 1rem;
   margin: 2rem 5rem;
 }
 
@@ -865,6 +863,9 @@ footer a:hover {
   .plant_hawthoria {
     display: none;
   }
+  .plant_hawthoria_about {
+    display: none;
+  }
   nav {
     padding: 1rem 1rem 0;
     display: -webkit-box;
@@ -1208,19 +1209,243 @@ footer a:hover {
   }
 }
 
-@media screen and (max-width: 1024px) {
-  intro {
+@media screen and (max-width: 799px) {
+  .plant_pearls {
+    position: absolute;
+    left: .75rem;
+    max-height: 15rem;
+  }
+  .intro {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-flow: row wrap;
             flex-flow: row wrap;
     gap: 1rem;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 1.5rem;
+  }
+  .hero_image_components {
+    margin: 0;
+    min-width: 25vw;
+  }
+  .about {
+    margin: 0;
+    width: 64vw;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    color: #402d5f;
+  }
+  .about p {
+    padding: .5rem 0;
+    font-size: 1.15rem;
+    line-height: 1.25rem;
+  }
+  .about fa-quote-left {
+    font-size: 3rem;
+    padding-right: .5rem;
+  }
+  .about fa-quote-right {
+    font-size: 3rem;
+    padding-left: .5rem;
+  }
+  .speech {
+    position: relative;
+    background-color: #e8998d;
+    padding: 1.5rem 1rem;
+    border-radius: 10px;
+    max-width: 100vw;
+    min-height: 100%;
+  }
+  .leg.speech::after {
+    border-right-color: #e8998d;
+    border-left: 0px;
+    left: -30px;
+    top: 35%;
+    margin-top: -20px;
+  }
+  .profile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    margin: 0rem;
+    width: 100%;
+  }
+  .plant_hawthoria_about {
+    display: block;
+    max-height: 8rem;
+    margin-top: 2rem;
+    margin-bottom: -2rem;
+  }
+  .plant_hawthoria {
+    display: none;
+  }
+  .section-details {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    gap: 1.75rem;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    margin: 3rem;
+    width: 100%;
+  }
+  .section-details ul {
+    margin: 0;
+  }
+  .skills-experience-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 1rem;
+    margin: 1.5rem;
+    width: 25vw;
+  }
+  .abilities {
+    width: 100vw;
+    margin: 1.5rem;
+  }
+  .abilities-wrapper {
+    width: 100vw;
+  }
+  .skill-icon-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    gap: 1rem;
+    border-radius: 0 0 10px 0;
+    text-align: center;
+    padding: 2rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-left: 5px solid #fbf7f4;
+    width: 74vw;
+  }
+  .skill-icon {
+    padding: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 0 .5rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .skills-small {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .skills-small i {
+    font-size: 3rem;
+  }
+  .skills-small p {
+    padding-bottom: 1.75rem;
+  }
+  .skills-large {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .skills-large i {
+    font-size: 6rem;
+    padding-bottom: 1.75rem;
+  }
+  .skills-large p {
+    padding-bottom: 1.75rem;
+  }
+  .gallery-wrapper {
+    margin: 1rem;
+  }
+  .projects-gallery {
+    width: 100vw;
+    border-radius: 10px;
+  }
+  .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    gap: 5px;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: .5rem 1rem 1rem 1rem;
   }
 }
 

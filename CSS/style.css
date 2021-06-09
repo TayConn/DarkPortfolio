@@ -207,7 +207,7 @@ nav li:hover {
 .plant_hawthoria {
   max-height: 20rem;
   position: absolute;
-  right: 13rem;
+  right: 10rem;
 }
 
 .plant_hawthoria_about {
@@ -483,9 +483,9 @@ footer a:hover {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column nowrap;
-          flex-flow: column nowrap;
+  -webkit-box-direction: reverse;
+      -ms-flex-flow: column-reverse nowrap;
+          flex-flow: column-reverse nowrap;
   gap: 1rem;
   border-radius: 0 0 10px 0;
   text-align: center;
@@ -670,7 +670,7 @@ footer a:hover {
 .accentLine {
   width: 3px;
   color: #5c374c;
-  min-height: 20rem;
+  min-height: 20.5rem;
   border: 3px solid #5c374c;
   margin: 0;
   position: relative;
@@ -828,6 +828,8 @@ footer a:hover {
       -ms-flex-align: center;
           align-items: center;
   padding: .5rem 1rem 1rem 1rem;
+  max-width: 100%;
+  overflow: hidden;
 }
 
 .row:after {
@@ -1207,7 +1209,7 @@ footer a:hover {
   }
 }
 
-@media screen and (min-width: 799px) and (max-width: 1024px) {
+@media screen and (min-width: 760px) and (max-width: 1024px) {
   .plant_pearls {
     position: absolute;
     left: .75rem;
